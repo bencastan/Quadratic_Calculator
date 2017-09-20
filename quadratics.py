@@ -12,6 +12,7 @@ def header():
 def get_values():
     """
     Gets the values for a, b & c
+    From the user
     :return: Tuple of the values of a, b , c
     """
     num_a = int(input(' Enter A '))
@@ -36,10 +37,10 @@ def get_discriminant(a, b, c):
 def one_solution(a, b, d):
     """
 
-    :param a:
-    :param b:
-    :param d:
-    :return:
+    :param a: Value a
+    :param b: Value b
+    :param d: Value c
+    :return: The single solution as a float
     """
     x = (-b + math.sqrt(d)) / 2 * a
     return x
@@ -48,11 +49,11 @@ def one_solution(a, b, d):
 def two_solution(a, b, c, d):
     """
 
-    :param a:
-    :param b:
-    :param c:
-    :param d:
-    :return:
+    :param a: Value a
+    :param b: Value b
+    :param c: Value c
+    :param d: Value d or the discriminant
+    :return: The two possible solutions or factors
     """
     x1 = (-b + math.sqrt((d))) / (2 * a)
     x2 = (-b - math.sqrt((d))) / (2 * a)
